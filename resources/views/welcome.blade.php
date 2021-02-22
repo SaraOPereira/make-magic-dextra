@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Make Magic - Dextra</title>
-        <link rel="stylesheet" href="{{ asset('css/app.css')}}" media="print" onload="this.media='all';this.onload=null;" />
-        <noscript><link rel="stylesheet" href="{{ asset('css/app.css')}}" ></noscript>
+        <link rel="stylesheet" href="{{ asset('css/app.min.css')}}" media="print" onload="this.media='all';this.onload=null;" />
+        <noscript><link rel="stylesheet" href="{{ asset('css/app.min.css')}}" ></noscript>
     </head>
     <body>
         <section id="home">
