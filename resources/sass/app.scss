@@ -1,0 +1,122 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/reboot";
+// @import "~bootstrap/scss/type";
+@import "~bootstrap/scss/grid";
+// @import "~bootstrap/scss/nav";
+// @import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/tables";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#home{
+    padding-top: 40px;
+    .logo{
+        margin-bottom: 40px;
+    }
+    h1{
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+    }
+    h2{
+        font-size: 28px;
+        line-height: 32px;
+        text-align: center;
+    }
+    .col-md-2{
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        margin-top: 40px;
+    }
+    form{
+        margin-top: 20px;
+        label{
+            font-size: 20px;
+            line-height: 26px;
+        }
+        input{
+            font-size: 20px;
+            line-height: 26px;
+        }
+        button{
+            display: block;
+            width: 100%;
+            border: 0;
+            text-align: center;
+            padding: 15px;
+            background: #FFE65A;
+            color: #fff;
+            font-weight: 700;
+            font-size: 24px;
+            margin-bottom: 25px;
+            &:hover{
+                background: #000;
+            }
+        }
+    }
+}
+#characters{
+    margin-top: 55px;
+    text-align: center;
+    h2{
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+    .table{
+        color: #fff;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+footer{
+    margin-top: 50px;
+    text-align: center;
+}
+
+@media(min-width: 768px){
+    #home{
+        .logo{
+            width: 35%;
+        }
+        form{
+            .flex{
+                display: flex;
+                justify-content: space-between;
+            }
+            input, select{
+                height: 45px !important;
+            }
+            .form-group{
+                margin-right: 15px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+            .btn-group{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                button{
+                    width: auto;
+                    &:first-child{
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
